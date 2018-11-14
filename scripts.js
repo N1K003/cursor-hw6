@@ -14,19 +14,6 @@ class Button {
         this.caption = caption;
     }
 
-    /*    animation(target) {
-            console.log(target);
-            console.log(target.srcElement);
-            const op = target.srcElement.style.opacity === '' ? 1.0 : Number.parseFloat(target.srcElement.style.opacity);
-
-            console.log(op);
-            console.log(this.stopAnimation);
-            if (this.stopAnimation || op < 0.1) return;
-            setTimeout(this.animation, 100);
-            target.srcElement.style.opacity = (op - 0.1) + '';
-        }*/
-
-
     get element() {
         const el = document.createElement('button');
         el.style.height = `${this.height}px`;
